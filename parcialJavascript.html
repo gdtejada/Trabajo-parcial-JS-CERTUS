@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro del Cliente</title>
+
+    <!-- cargar bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+   
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-8 col-lg-6 col-xl-4 mx-auto">
+                <form id="registroUsuario" action="use_New.html" method="post" onsubmit="return validarNuevoUsuario()">
+                    <h2 class="my-5">Registracion de cliente</h2>
+                    <!-- input nombre -->
+                    <div class="mb-3">
+                        <label class="form-label"  for="txtNombre">Ingrese su nombre <span class="text-danger">*</span></label>
+                        <input id="txtNombre" name="txtNombre" class="form-control" type="text" > </input>
+                    </div>    
+                    <!-- input apellido -->
+                    <div class="mb-3">
+                        <label class="form-label"  for="txtNombre">Ingrese su Apellido<span class="text-danger">*</span></label>
+                        <input id="txtApellido" name="txtApellido" class="form-control" type="text" > </input>
+                    </div>  
+                    <!-- input email -->
+                    <div class="mb-3">
+                        <label class="form-label"  for="txtemail">Ingrese su email<span class="text-danger">*</span></label>
+                        <input id="txtemail" name="txtemail" class="form-control" type="email" > </input>
+                    </div>    
+                    <!-- input genero -->
+                    <div class="mb-3">
+                        <label for="genero" class="form-label">Género:<span class="text-danger">*</span></label>
+                        <select class="form-select" id="genero" name="genero" >
+                            <option value=""></option>
+                            <option value="masculino">Masculino</option>
+                            <option value="femenino">Femenino</option>                            
+                        </select>
+                    </div>
+                    <!-- input date -->
+                    <div class="mb-3">
+                        <label class="form-label"  for="txtdate">Ingrese su fecha de nacimiento<span class="text-danger">*</span></label>
+                        <input id="txtdate" name="txtdate" class="form-control" type="date" min="1873-12-31" max="2005-12-31" > </input>
+                    </div>                    
+                       
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- cargar jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- cargar js custom -->
+    <script src="parcialJS.js"></script>
+</body>
+</html>
