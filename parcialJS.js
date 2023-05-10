@@ -5,11 +5,11 @@ $(document).ready(function () {
         event.preventDefault();
 
         /* valores del formulario */
-        var nombre = $('#txtNombre').val();
-        var apellido = $('#txtApellido').val();
-        var correo = $('#txtemail').val();
-        var genero = $('#genero').val();
-        var fecha_nacimiento = $('#txtdate').val();
+        let nombre = $('#txtNombre').val();
+        let apellido = $('#txtApellido').val();
+        let correo = $('#txtemail').val();
+        let genero = $('#genero').val();
+        let fecha_nacimiento = $('#txtdate').val();
 
         /* validacion de datos */
         if (nombre === '' || apellido === '' || correo === '' || genero === '' || fecha_nacimiento === '') {
